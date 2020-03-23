@@ -1,12 +1,12 @@
 <?php
 /**
- * @name Info
- * @main Info\Info
+ * @name PInfo
+ * @main PInfo\PInfo
  * @author Puki
  * @version 1.0.0
  * @api 4.0.0
  */
-namespace Info;
+namespace PInfo;
 
     use pocketmine\event\Listener;
     use pocketmine\Player;
@@ -25,7 +25,7 @@ namespace Info;
       PlayerQuitEvent, PlayerJoinEvent
     };
 
-    class Info extends PluginBase implements Listener {
+    class PInfo extends PluginBase implements Listener {
 
         public function onEnable() {
           $this->getServer()->getPluginManager()->registerEvents($this, $this);
